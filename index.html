@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Welcome to SVR</h2>
+      </div>
+      <div class="Booking">
+        <form class="formone">
+          <div class="form-group">
+            <label for="cat-name">Category of movies :</label>
+              <select class="form-control" id="cat-name" required>
+                <option value="" selected disabled>Please select</option>
+                <option value="First Release">First Release</option>
+                <option value="Regular">Regular</option>
+              </select>
+            </div>
+          <!-- <div class="form-group" id="firstrelease">
+            <label for="first-release">First Release Movies :</label>
+              <select class="form-control" id="first-release" required>
+                <option value="" selected disabled>Please select</option>
+                <option value="1">Incognito</option>
+                <option value="2">Arrival</option>
+                <option value="3">Piku</option>
+              </select>
+            </div>
+          <div class="form-group" id="regular">
+            <label for="regular">Regular Movies :</label>
+              <select class="form-control" id="regular-movie" required>
+                <option value="" selected disabled>Please select</option>
+                <option value="1">Force</option>
+                <option value="2">Kidnap</option>
+                <option value="3">Bahubaali</option>
+              </select>
+            </div> -->
+
+              <div class="form-group">
+                <label for="time">Time :</label>
+                <select class="form-control" id="time" required>
+                <option value="" selected disabled>Please select</option>
+                <option value="Matinee">Matinee</option>
+                <option value="Evening">Evening</option>
+                </select>
+            </div>
+              <div class="form-group">
+                <label for="age">Age :</label>
+                <select class="form-control" id="age" required>
+                <option value="" selected disabled>Please select</option>
+                <option value="1">Less than 21 years</option>
+                <option value="2">21 years and above</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ticket">Number of tickets :</label>
+              <input id ="ticket" type="number" required>
+          </div>
+          <button type="submit" name="button">Submit</button>
+          <input id= "refresh" type=button value="Refresh" onClick="history.go()">
+        </form>
+
+        </div>
+        <div id="result">
+          <h3>Ticket price is mentioned below :</h3>
+          <p>Movie: <span class="cat-name"></span></p>
+          <p>Time: <span class="time"></span></p>
+          <p>Cost: <span id="cost"></span></p>
+        </div>
+
+
+      </div>
+
+
+
+  </body>
+</html>
