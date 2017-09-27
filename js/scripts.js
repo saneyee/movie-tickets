@@ -1,3 +1,5 @@
+
+
 function Ticket(movieCategory, time, age, tickets) {
   this.movieCategory = movieCategory;
   this.time = time;
@@ -12,7 +14,7 @@ Ticket.prototype.fullTicket = function() {
   if (this.time === 'Matinee') {
     this.price -= 2;
   }
-  if (this.age === '1') {
+  if (this.age === 'Teen') {
     this.price -= 3;
   }
   return this.tickets*this.price;
